@@ -2686,9 +2686,15 @@ a.logo:hover{
     color: #777;
     font-size: 14px;
     font-weight: 300;
-    line-height: 1.86
+    line-height: 1.86;
 }
 
+.alt-features-descr-black {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.86;
+    letter-spacing: 0.1em;
+}
 
 /* ==============================
    Benefits
