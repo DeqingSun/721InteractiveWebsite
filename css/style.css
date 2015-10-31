@@ -10,8 +10,10 @@ Primary use:    MultiPurpose Template
 
 @import "font-awesome.min.css";
 @import "et-line.css";
+/*https://google-webfonts-helper.herokuapp.com/fonts
 @import url(http://fonts.useso.com/css?family=Open+Sans:400italic,700italic,400,300,700);
-@import url(http://fonts.useso.com/css?family=Dosis:300,400,700);
+@import url(http://fonts.useso.com/css?family=Dosis:300,400,700);*/
+@import "local-google-font.css";
 
 /*------------------------------------------------------------------
 [Table of contents]
