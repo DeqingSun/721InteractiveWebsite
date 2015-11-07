@@ -2855,6 +2855,7 @@ a.logo:hover{
 .works-filter a{
 	display: inline-block;
 	margin: 0 27px;
+  padding: 6px 20px 5px; 
 	color: #999;
 	text-decoration: none;
 	
@@ -2863,16 +2864,23 @@ a.logo:hover{
     -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+
+  border: 1px solid transparent;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
 	
 	cursor: pointer;
 }
 .works-filter a:hover{
 	color: #111;
 	text-decoration: none;
+  border: 1px solid #999 !important;
 }
 .works-filter a.active{
 	color: #111;
 	cursor: default;
+  border: 1px solid #111 !important;
 }
 .works-filter a.active:hover{
 	color: #111;
