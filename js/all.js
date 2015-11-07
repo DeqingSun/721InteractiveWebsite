@@ -35,10 +35,29 @@
         init_map();
         init_wow();
         init_masonry();
+
+        // $(window).scroll(function(){
+        //     if ($(this).scrollTop() < 425) {
+        //         $("#fixeddiv").css("position",'relative');
+        //     } else {
+        //         // $("#fixeddiv").css("position",'fixed');
+        //         $("#fixeddiv").css("margin-top", Math.max(75, 0 - $(this).scrollTop()));
+        //     }
+        // });
+
     });
     
     $(window).resize(function(){
-        
+        //jedy
+        if ($(window).width() <= 1024) {
+            IsMobile = true;
+            $("#fixeddiv").css("position", "relative");
+            $("#fixeddiv").css("top", 0); 
+        }
+        else {
+            IsMobile = false;
+        }
+        //
         init_classic_menu_resize();
         js_height_init();
         
@@ -78,7 +97,20 @@
         document.documentElement.className += " no-touch";
     }
     
-    
+
+    //jedy
+    var IsMobile = false;
+    $(window).scroll(function(){
+            if(!IsMobile && !mobileTest){
+                 $("#fixeddiv").css("position", "fixed");
+                 $("#fixeddiv").css("top", Math.max(100, $("#topsection").height()+290 - $(this).scrollTop()));
+            }
+            else{
+                $("#fixeddiv").css("position", "relative");
+                $("#fixeddiv").css("top", 0); 
+            }
+    });
+
     /* ---------------------------------------------
      Sections helpers
      --------------------------------------------- */

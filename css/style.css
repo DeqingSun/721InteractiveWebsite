@@ -116,6 +116,11 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
 	top: 0;
 	left: 0;
 }
+.div-fixed{
+  position: fixed !important;
+  top: 30;
+  left: 0;
+}
 .round{
     -webkit-border-radius: 2px !important;
     -moz-border-radius: 2px !important;
@@ -1362,18 +1367,18 @@ a.logo:hover{
 }
 .inner-nav ul li a{
 	color: #777;
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 	display: inline-block;
 	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	text-decoration: none;
 	
 	-webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
-    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
-    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
-    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+  -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+  -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+  transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 .inner-nav ul > li:first-child > a{
 
