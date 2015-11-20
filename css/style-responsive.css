@@ -254,7 +254,9 @@ Primary use:    MultiPurpose Template
         padding: 70px 0;
     }	
     .small-section {
-        padding: 50px 0;
+        padding: 120px 0 50px 0;
+        /*AV&C responsive */
+        /*padding: 50px 0;*/
     }
     .small-title{
         font-size: 18px;
@@ -557,7 +559,9 @@ Primary use:    MultiPurpose Template
         padding: 50px 0;
     }
     .small-section {
-        padding: 30px 0;
+        padding: 100px 0 30px 0;
+        /*AV&C responsive */
+        /*padding: 30px 0;*/
     }
 	
 	.owl-pagination {

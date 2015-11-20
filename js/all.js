@@ -48,19 +48,34 @@
     });
     
     $(window).resize(function(){
-        //jedy
+        //AV&C Reponsive div
         if ($(window).width() <= 1024) {
             IsMobile = true;
             $("#fixeddiv").css("position", "relative");
             $("#fixeddiv").css("top", 0); 
         }
         else {
+            $("#fixeddiv").css("top", Math.max(100, $("#topsection").height()+290 - $(this).scrollTop()));
+            $("#fixeddiv").css("position", "fixed");
             IsMobile = false;
         }
         //
         init_classic_menu_resize();
         js_height_init();
         
+    });
+
+    //AV&C Reponsive div
+    var IsMobile = false;
+    $(window).scroll(function(){
+            if(!IsMobile && !mobileTest){
+                 $("#fixeddiv").css("position", "fixed");
+                 $("#fixeddiv").css("top", Math.max(100, $("#topsection").height()+290 - $(this).scrollTop()));
+            }
+            else{
+                $("#fixeddiv").css("position", "relative");
+                $("#fixeddiv").css("top", 0); 
+            }
     });
     
     
@@ -98,18 +113,7 @@
     }
     
 
-    //jedy
-    var IsMobile = false;
-    $(window).scroll(function(){
-            if(!IsMobile && !mobileTest){
-                 $("#fixeddiv").css("position", "fixed");
-                 $("#fixeddiv").css("top", Math.max(100, $("#topsection").height()+290 - $(this).scrollTop()));
-            }
-            else{
-                $("#fixeddiv").css("position", "relative");
-                $("#fixeddiv").css("top", 0); 
-            }
-    });
+    
 
     /* ---------------------------------------------
      Sections helpers
