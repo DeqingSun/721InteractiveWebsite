@@ -136,9 +136,9 @@ d3.json("app/FA counts.json", function (err, root) {
     drawCenter();
     
     d3.json("app/project.json", function (err, root) {
-    console.log(root)
+    //console.log(root)
     projectData = root;
-    console.log(projectData);
+    //console.log(projectData);
     drawOuterCircle();
     // drawLinks(); 
 });
@@ -258,7 +258,7 @@ function drawOuterCircle() {
 
 function mouseOverFA(d) {
     var FARelatedProjects = _.compact(_.values(d).slice(2, 23));
-    console.log(FARelatedProjects);
+    //console.log(FARelatedProjects);
     d3.select(document.getElementById(d.FIELD1))
         .transition()
         .attr("opacity", "0.35");
@@ -403,7 +403,7 @@ function mouseOverProject(d) {
 function mouseOutProject(d) {
 
     var ProjectRelatedFA = _.compact(_.values(d).slice(2, 19));
-    console.log(ProjectRelatedFA);
+    //console.log(ProjectRelatedFA);
 
     d3.select(document.getElementById(d.FIELD1))
         .transition()
@@ -467,7 +467,7 @@ function showInfo(d, ifOver) {
             .style("font-size", "15")
             .style("text-align", "center");
         projectDescription.text(function (d) {
-                console.log(thisProject);
+                //console.log(thisProject);
                 return thisProject.FIELD20;
             })
             .style("font-family", "PT Sans")
