@@ -3779,7 +3779,7 @@ a.link-to-top{
     height: 40px;
     line-height: 40px;
     text-align: center;
-    color: rgba(0,0,0, .2);
+    color: rgba(255,255,255, .5);
     font-size: 48px;
 }
 
@@ -5198,4 +5198,8 @@ section:hover .small-item-carousel .owl-next{
 	.multi-columns-row .col-lg-3:nth-child(4n + 5) { clear: left; }
 	.multi-columns-row .col-lg-2:nth-child(6n + 7) { clear: left; }
 	.multi-columns-row .col-lg-1:nth-child(12n + 13) { clear: left; }
+}
+
+.project-detail-image {
+	padding-bottom: 20px;
 }
