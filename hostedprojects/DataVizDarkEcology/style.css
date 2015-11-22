@@ -1,0 +1,101 @@
+.baseLevel {
+    opacity: 0.1;
+    color: aqua;
+    z-index: -2
+}
+
+#header {
+    position: absolute;
+    margin-left: 20%;
+    z-index: 4;
+    margin-right:20% ;
+}
+
+#mainTitle {
+    position: relative;
+    margin-right: auto;
+    margin-left:auto;
+    margin-left:auto;
+    font-family: "Avenir";
+    font-size: 25
+}
+
+#topBox {
+    text-align: left;
+    position: absolute;
+    width: 220px;
+    right: 10px;
+    top: 155px;
+    margin-right: 20px;
+    font-size: 12px;
+    font-family: "Avenir";
+    line-height: 170%;
+    z-index: 1;
+}
+
+#mainDiv {
+    margin-top: 0;
+    position: absolute;
+    margin-right: 30%;
+    margin-left: 2%;
+}
+
+#tooltip {
+    position: absolute;
+    /* reference for measurement */
+    
+    text-align: left;
+    pointer-events: none;
+    /* 'none' tells the mouse to ignore the rectangle */
+    
+    background: #FFFFEF;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #D5D5D5;
+    font-family: arial, helvetica, sans-serif;
+    position: absolute;
+    font-size: 1.1em;
+    color: #333;
+    padding: 10px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(200, 200, 200, 0.85);
+    opacity: 0;
+    z-index: 3
+}
+
+#projectName {
+    margin: 3px auto 2px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+#projectDescription {
+    margin: 10px;
+    text-align: center;
+    line-height: 150%;
+    
+}
+
+
+#link {
+
+    margin-right: 5px;
+    text-align: center;
+    font-family: "PT Sans";
+    font-size:12;
+    
+}
+
+#header-rule {
+    height: 1px;
+    margin: 1px auto 3px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    background: #ddd;
+    width: 125px;
+}
