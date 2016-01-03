@@ -2979,9 +2979,10 @@ a.logo:hover{
 .work-descr{	
 	font-size: 11px;
 	text-align: center;
-    text-transform: uppercase;
+	text-transform: none;
 	color: #aaa;
 	line-height: 1.2;
+	letter-spacing: 0.1em;
 }
 .works-grid.hide-titles .work-item > a{
 	overflow: hidden;	
