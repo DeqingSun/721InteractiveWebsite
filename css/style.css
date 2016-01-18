@@ -949,14 +949,15 @@ a.btn-mod:focus{
 	width: 100%;
 	display: block;	
 	position: relative;
-    overflow: hidden;
-	background-repeat: no-repeat;
-    background-attachment: fixed;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	overflow: hidden;
+	background-repeat: no-repeat, no-repeat;
+	background-attachment: scroll, fixed;
+	background-position: top center, center center;
+	-webkit-background-size: cover, cover;
+	-moz-background-size: cover, cover;
+	-o-background-size: cover, cover;
+	background-size: cover, cover;
+	background-image: url(../images/video-cover.png),url(../images/mobile-video-placeholder.jpg);
 }
 
 .home-content{
