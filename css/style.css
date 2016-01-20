@@ -952,7 +952,7 @@ a.btn-mod:focus{
 	overflow: hidden;
 	background-repeat: no-repeat, no-repeat;
 	background-attachment: scroll, fixed;
-	background-position: top center, center center;
+	background-position: top center, top center;
 	-webkit-background-size: cover, cover;
 	-moz-background-size: cover, cover;
 	-o-background-size: cover, cover;
