@@ -579,8 +579,8 @@ Primary use:    MultiPurpose Template
     .section-title,
 	.split-section-headings .section-title,
 	.wide-heading {
-        font-size: 24px;
-		letter-spacing: 2px;
+        font-size: 20px;
+		letter-spacing: 0.5em;
     }	
     .section-heading,
 	.sub-heading{
